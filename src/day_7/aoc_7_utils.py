@@ -31,4 +31,4 @@ def generate_bags_graph(rules) -> ig.Graph:
 
 
 def count_bags(vertex: ig.Vertex):
-    return 1 + sum(edge["contains"] * count_bags(edge.target_vertex) for edge in list(vertex.out_edges()))
+    return 1 + sum(edge['contains'] * count_bags(edge.target_vertex) for edge in list(vertex.out_edges()))

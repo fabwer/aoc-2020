@@ -4,7 +4,7 @@ import re
 def read_string_from_txt(filename):
     try:
         with open(filename) as f:
-            return [line.strip("\n") for line in f]
+            return [line.strip('\n') for line in f]
     except OSError as identifier:
         return []
 
