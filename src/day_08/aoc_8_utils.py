@@ -10,10 +10,10 @@ def run(instructions: list):
     acc = 0
     visited = set()
     while True:
-        # Part one
+        # part 1
         if i in visited:
             return (acc, False)
-        # Part two
+        # part 2
         elif i == len(instructions):
             return (acc, True)
         visited.add(i)
