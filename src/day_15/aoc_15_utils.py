@@ -21,6 +21,7 @@ def play_memory_game(starting_nums, end):
             current = 0
         else:
             current = seq[last_num][-1] - seq[last_num][-2]
+        # needed for count()
         # if i == end:
         #     return current
         seq[current].append(i)
